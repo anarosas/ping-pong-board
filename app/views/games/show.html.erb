@@ -1,0 +1,31 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Player a:</strong>
+    <%= @game.player_a.name %>
+  </p>
+
+  <p>
+    <strong>Player b:</strong>
+    <%= @game.player_b.name %>
+  </p>
+
+  <p>
+    <strong>Duration:</strong>
+    <%= @game.duration %>
+  </p>
+
+  <p>
+    <strong>Score player a:</strong>
+    <%= @game.score_player_a %>
+  </p>
+
+  <p>
+    <strong>Score player b:</strong>
+    <%= @game.score_player_b %>
+  </p>
+
+  <%= link_to 'Edit', edit_game_path(@game) %> |
+  <%= link_to 'Back', games_path %>
+</div>
