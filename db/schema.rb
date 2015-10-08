@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151008154127) do
+ActiveRecord::Schema.define(version: 20151008181350) do
 
   create_table "games", force: :cascade do |t|
     t.integer  "player_a_id"
@@ -37,8 +37,8 @@ ActiveRecord::Schema.define(version: 20151008154127) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.integer  "wins"
-    t.integer  "losses"
+    t.integer  "wins",                   default: 0
+    t.integer  "losses",                 default: 0
     t.integer  "total_games"
     t.integer  "global_score",           default: 0
   end
